@@ -1,0 +1,247 @@
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Assignment 03</title>
+
+  <!-- Google Font CDN  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+  <!-- DaisyUi CDN  -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Remix Icon CDN  -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.css"
+    integrity="sha512-6p+GTq7fjTHD/sdFPWHaFoALKeWOU9f9MPBoPnvJEWBkGS4PKVVbCpMps6IXnTiXghFbxlgDE8QRHc3MU91lJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Custom Config  -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    .manrope {
+      font-family: "Manrope", sans-serif;
+    }
+  </style>
+</head>
+
+<body class="manrope">
+  <!-- ===============================Header Section Starts====================== -->
+
+  <header class="w-full bg-[#F4F4F4] p-4">
+    <div class="container mx-auto flex items-center justify-between">
+
+      <!-- Logo Side -->
+      <div class="flex items-center space-x-2">
+        <div class="w-7 h-7  rounded-full flex items-center justify-center bg-[#ABEF5F] text-black">
+          <i class="ri-arrow-right-up-line"></i>
+        </div>
+        <h2 class="text-black font-bold text-xl">Rinterio</h2>
+      </div>
+
+      <!-- Menu Side -->
+      <div class="hidden md:flex space-x-6">
+        <a href="#" class="text-black font -bold hover:text-gray-400">
+          Home
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          About
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          Services
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          Portfolio
+        </a>
+        <a href="#" class="text-black hover:text-gray-400">
+          Contact
+        </a>
+      </div>
+
+      <!-- Icons -->
+      <div class="hidden lg:flex items-center space-x-4">
+        <div
+          class="w-7 h-7  rounded-full flex items-center justify-center bg-white text-black drop-shadow-xl cursor-pointer">
+          <i class="ri-shopping-cart-2-line"></i>
+        </div>
+        <div
+          class="w-7 h-7  rounded-full flex items-center justify-center bg-white text-black drop-shadow-xl cursor-pointer">
+          <i class="ri-search-2-line"></i>
+        </div>
+
+        <!-- Button Side -->
+        <button class="flex items-center bg-lime-300 text-black font-bold px-4 py-2 rounded-full hover:bg-lime-200">
+          Book Consult
+          <div class="ml-2 w-6 h-6  rounded-full flex items-center justify-center bg-black text-white">
+            <i class="ri-arrow-right-up-line"></i>
+          </div>
+        </button>
+      </div>
+
+      <!-- Menu Icon Only For Mobile-->
+      <div class="flex items-center lg:hidden">
+        <div
+          class="w-10 h-10 bg-white rounded-full flex items-center justify-center text-black cursor-pointer hover:bg-[#f6f6f6]">
+          <i class="ri-menu-line"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===============================Header Section Ends========================= -->
+
+  <!-- ===============================Main Section Starts========================= -->
+  <main>
+    <!-- ===============================Banner Section Starts======================= -->
+
+    <div class="hero bg-[#FCFCFC] min-h-56">
+      <div class="hero-content text-center mt-9">
+        <div class=" max-w-md">
+          <img src="./images/banner.png" alt="" style="width: 90%;" class="mx-auto">
+          <h1 class="text-3xl max-w-2xl font-extrabold lg:text-4xl">A barn house of this design has a striking
+            appearance</h1>
+          <p class="py-4 lg:text-xl">
+            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+            wood.
+          </p>
+          <button
+            class="w-full flex items-center justify-center bg-lime-200 text-black font-bold px-4 py-2 rounded-full mx-auto hover:bg-lime-100 lg:w-auto">
+            View Details
+            <div class="ml-2 w-6 h-6  rounded-full flex items-center justify-center bg-[#ABEF5F] text-black">
+              <i class="ri-arrow-right-up-line"></i>
+            </div>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- ===============================Banner Section Ends======================= -->
+
+    <!-- ===============================Design Section Starts=======================-->
+    <div class="hero bg-base-200 min-h-max">
+      <div class="gap-6 flex-col-reverse hero-content lg:flex-row-reverse lg:gap-24">
+        <div>
+          <img src="./images/Rectangle.png" />
+        </div>
+        <div>
+          <img src="./images/Vector.png" alt="" class="hidden lg:block mb-3" style="width: 15%;">
+          <button
+            class="mx-auto lg:mx-0 flex items-center bg-white text-black font-bold px-4 py-2 rounded-full mb-5 drop-shadow-xl">
+            <i class="ri-arrow-right-line"></i>
+            About Us
+          </button>
+          <h2 class="text-center text-3xl lg:text-left lg:text-5xl font-bold">We design thoughtful, <br> liveable spaces
+          </h2>
+          <p class="text-center lg:text-left py-6">
+            The barn house captivates with its blend of rustic charm and <br>
+            modern sophistication, featuring weathered wood, sleek metal accents.
+          </p>
+          <!-- Cards  -->
+          <div class="bg-white flex flex-start drop-shadow-xl px-5 py-7 gap-8 rounded-2xl">
+            <div>
+              <img src="./images/commercial.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Commercial</h4>
+              <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+            </div>
+          </div>
+          <br>
+          <div class="bg-white flex flex-start drop-shadow-xl px-5 py-7 gap-8 rounded-2xl">
+            <div>
+              <img src="./images/residential.png" alt="">
+            </div>
+            <div>
+              <h4 class="font-semibold">Residential</h4>
+              <p>The barn house captivates with its blend <br> of rustic charm and modern.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ===============================Design Section Ends=======================-->
+
+    <!-- ===============================Works Section Starts=======================-->
+    <div>
+      <div class="hero bg-base-200 min-h-56 pt-7">
+        <div class="hero-content text-center flex flex-col items-center ">
+          <button
+            class="mx-auto lg:mx-0 flex items-center bg-white text-black font-bold px-4 py-2 rounded-full mb-5 drop-shadow-xl">
+            <i class="ri-arrow-right-line"></i>
+            How We Works
+          </button>
+          <div class="max-w-md">
+            <h2 class="text-center text-3xl lg:text-5xl font-bold">Our Works Process</h2>
+            <p class="py-6">
+              The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered
+              wood, sleek metal accents.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Work Cards  -->
+
+      <div class="bg-base-200 pb-7 grid place-items-center gap-4 lg:grid-cols-4 lg:pb-10">
+        <!-- card-1  -->
+        <div class="card bg-[#E7C1D3] w-72">
+          <img src="./images/concept.png" alt="" style="width: 25%;" class="mt-7 ml-5">
+          <div class="card-body">
+            <h4 class="card-title">Concept</h4>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+        <!-- card-2 -->
+        <div class="card bg-[#EFDA6E] w-72">
+          <img src="./images/flow-chart.png" alt="" style="width: 25%;" class="mt-7 ml-5">
+          <div class="card-body">
+            <h4 class="card-title">Design Process</h4>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+        <!-- card-3  -->
+        <div class="card bg-[#A4DAC3] w-72">
+          <img src="./images/vision.png" alt="" style="width: 25%;" class="mt-7 ml-5">
+          <div class="card-body">
+            <h4 class="card-title">Supervision</h4>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+        <!-- card-4  -->
+        <div class="card bg-[#77AAEA] w-72">
+          <img src="./images/budget-planning.png" alt="" style="width: 25%;" class="mt-7 ml-5">
+          <div class="card-body">
+            <h4 class="card-title">Budget Planning</h4>
+            <p>The barn house captivates with its blend of rustic charm and modern.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <!-- ===============================Works Section Ends=======================-->
+  </main>
+  <!-- ===============================Main Section Ends=========================== -->
+
+  <!-- ===============================Footer Section Starts======================= -->
+  <footer>
+
+  </footer>
+  <!-- ===============================Footer Section Ends========================= -->
+</body>
+
+</html>
